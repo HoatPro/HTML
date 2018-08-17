@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: arial;
+	font-size: 14px;
+    color:#FFFFF;
+}
+#header-wrapper{
+	background: #364253;
+	height: 115px;
+
+}
+.home-disputo{
+	width: 1920px;
+	height: auto;
+
+
+}
+
+.logo{
+	margin: 50px 100px 100px 50px;
+	float: left;
+    width: 100px;
+    height: 30px;
+}
+.container{
+	 width: 70%;
+	 margin: auto;
+	 text-align: center;
+}
+
+.navbar-brand img{
+    width:200px;
+    height:100px;
+}
+/*Dropdown-menu tạo menu đổ xuống*/
+.dropdown-menu{
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+/*Đổi màu nền khi hover và focus Dropdown*/
+.dropdown-menu:hover,.dropdown:focus{
+	background-color: #3e8e41;
+}
+
+.dropdown-menu{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px  rgba(0,0,0,0.2);
+	z-index: 1;
+
+}
+/* Định dạng các thẻ a là các menu con*/
+ul#menu, ul#menu ,ul#sub {
+    padding:0;
+    margin: 0;
+}
+ul#menu li {
+     list-style-type: none;    /* code này để bỏ các dấu chấm tròn*/
+     float: left;              /* code này để menu dàn hàng ngang*/
+     margin-right: 10px;       /* tạo lề cho các menu*/
+}
+ul#menu li a {
+    text-decoration: none;
+    background-color: #900;
+    padding: 5px;
+    color: white;
+}
+ul#menu li {
+    positon: relative;
+}
+ul#menu li ul#sub {
+    display: none;
+    position: absolute;
+    width: 100px;
+}
+ul#menu li ul#sub li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+ul#menu li:hover ul#sub {
+    display: block;
+}
+.nav {
+    background: #232323;
+    height: 60px;
+    display: inline-block;
+}
+ 
+.nav li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+.nav li a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    line-height: 60px;
+    padding: 0 26px;
+    text-decoration: none;
+    border-left: 1px solid #2e2e2e;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.nav li a:hover {
+    background-color: #2e2e2e;
+}
+ 
+#settings a {
+    padding: 18px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 24px;
+}
+#search {
+    width: 357px;
+    margin: 4px;
+}
+#search_text{
+    width: 297px;
+    padding: 15px 0 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 52px;
+    line-height: 52px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #1f7f5c;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+#search_text:focus {
+    background: rgb(64, 151, 119);
+}
+#search_button {
+    border: 0 none;
+    background: #1f7f5c url(search.png) center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+    cursor: pointer;
+}
+#options a{
+    border-left: 0 none;
+}
+#options>a {
+    background-image: url(triangle.png);
+    background-position: 85% center;
+    background-repeat: no-repeat;
+    padding-right: 42px;
+}
+.subnav {
+    visibility: hidden;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transition: all 0.1s;
+    background: #232323;
+}
+.subnav li {
+    float: none;
+}
+.subnav li a {
+    border-bottom: 1px solid #2e2e2e;
+}
+#options:hover .subnav {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
